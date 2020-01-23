@@ -65,6 +65,7 @@
         align-items: flex-end;
         justify-content: space-between;
         min-width: 181px;
+        opacity: 1;
     }
     &__arrow-item {
         background: url(../img/next.svg) no-repeat;
@@ -80,7 +81,7 @@
         border-radius: 1px;
         background-size: 30%;
         opacity: 0.5;
-        &:first-of-type {
+        &_left {
             transform: rotate(180deg);
         }
         &:hover {

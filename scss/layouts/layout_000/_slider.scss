@@ -88,8 +88,7 @@
         background-color: $baseBlack;
         color: $baseWhite;
     }
-}
-
-.arrows {
-    display: none;
+    &__arrows {
+        display: none;
+    }
 }

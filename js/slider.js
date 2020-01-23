@@ -6,7 +6,7 @@ $(document).ready(function() {
         autoplaySpeed: 6000,
         fade: true,
         dots: false,
-        arrows: false,
+        arrows: true,
         draggable: true,
         // pauseOnHover: true,
         // mobileFirst: true,
@@ -23,10 +23,10 @@ $(document).ready(function() {
     });
 });
 
-$(".left").click(function() {
+$(".slider-box__arrow-item_left").click(function() {
     $(".fade").slick("slickPrev");
 });
 
-$(".right").click(function() {
+$(".slider-box__arrow-item_right").click(function() {
     $(".fade").slick("slickNext");
 });
