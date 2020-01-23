@@ -1,0 +1,7 @@
+@function rem($target) {
+    @return ($target / $baseFontSize) *1rem;
+}
+
+@function em($target, $context: 16px) {
+    @return ($target / $context) * 1em;
+}

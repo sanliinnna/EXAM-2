@@ -1,0 +1,95 @@
+.slider-box {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    outline: none;
+    &__item {
+        @include display(block);
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 10px;
+        background-color: #f2f2f2;
+        overflow: hidden;
+        text-transform: uppercase;
+        outline: none;
+    }
+    &__lamp1 {
+        max-width: 25%;
+        position: absolute;
+        top: -70px;
+        left: 20%;
+        animation: .7s lamp-start, 5.5s lamp-moving 1s infinite alternate;
+    }
+    &__lamp2 {
+        max-width: 45%;
+        position: absolute;
+        top: -30px;
+        left: 45%;
+        animation: .7s lamp-start, 5s lamp-moving .7s infinite alternate;
+    }
+    &__sideboard {
+        max-width: 80%;
+        margin-left: 20px;
+        position: absolute;
+        margin-top: 10%;
+        animation: sideboard-moving 6s infinite alternate ease-in-out;
+    }
+    &__subtitle {
+        font-size: rem(10px);
+        font-weight: $baseFontWeightBold;
+        margin-top: 75%;
+        position: relative;
+        margin-left: 12%;
+        &::before {
+            position: absolute;
+            content: "";
+            min-width: 36px;
+            left: -30px;
+            top: 16px;
+            height: 2px;
+            background-color: $baseBlack;
+            transform: rotate(90deg);
+        }
+    }
+    &__title {
+        max-width: 80%;
+        font-size: rem(36px);
+        font-weight: $baseFontWeightBold;
+        margin-left: 10%;
+        // margin-top: 45px;
+        margin-top: 5%;
+    }
+    &__paragraph {
+        max-width: 80%;
+        font-size: rem(8px);
+        margin-left: 10%;
+        // margin-top: 40px;
+        margin-top: 5%;
+    }
+    &__price {
+        font-size: rem(13px);
+        margin-left: 10px;
+        font-weight: $baseFontWeightBold;
+        // margin-top: 15%;
+    }
+    &__button {
+        min-width: 130px;
+        max-width: 35%;
+        font-size: rem(14px);
+        font-weight: $baseFontWeightBold;
+        line-height: 24px;
+        height: 50px;
+        padding: 0 25px;
+        margin-bottom: 50px;
+        margin-left: 10%;
+        margin-top: 5%;
+        background-color: $baseBlack;
+        color: $baseWhite;
+    }
+}
+
+.arrows {
+    display: none;
+}

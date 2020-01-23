@@ -1,0 +1,17 @@
+.header {
+    @include display(flex);
+    @include justify-content(space-between);
+    padding: 20px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $baseWhite;
+    &__logo {
+        flex-basis: 130px;
+    }
+    &__facilities {
+        display: none;
+    }
+}

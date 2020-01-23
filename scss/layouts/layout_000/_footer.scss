@@ -1,0 +1,77 @@
+.footer {
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    background: $baseGray;
+    color: $baseWhite;
+    font-size: rem(14px);
+    font-weight: $baseFontWeightLight;
+    padding-top: 60px;
+    line-height: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    a {
+        color: $baseWhite;
+    }
+    &__wrap {
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(space-around);
+        text-align: center;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__logo {
+        max-width: 130px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-size: rem(16px);
+        font-weight: $baseFontWeightBold;
+        margin-bottom: 20px;
+    }
+    &__form {
+        @include display(flex);
+        @include flex-direction(column);
+        min-width: 100%;
+        input {
+            border: 0;
+            border-bottom: solid 1px $baseWhite;
+            background: transparent;
+            height: 45px;
+            min-width: 100%;
+            text-align: center;
+            font-size: rem(14px);
+            font-weight: $baseFontWeightLight;
+            color: $baseWhite;
+            &:focus {
+                outline: none;
+                color: $baseColor;
+            }
+        }
+    }
+    &__form-button {
+        height: 45px;
+        min-width: 100%;
+        border: 0;
+        border-bottom: solid 1px $baseWhite;
+        color: $baseWhite;
+        background: transparent;
+        font-size: rem(14px);
+        font-weight: $baseFontWeightBold;
+        margin-bottom: 20px;
+        outline: none;
+    }
+    &__social-box {
+        @include display(flex);
+        @include justify-content(space-evenly);
+        @include align-self(stretch);
+        padding: 20px;
+    }
+    &__social-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

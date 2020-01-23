@@ -1,0 +1,27 @@
+.slider-box {
+    &__lamp1 {
+        max-width: 23%;
+        top: -80px;
+        left: 25%;
+    }
+    &__lamp2 {
+        max-width: 35%;
+        top: -10px;
+        left: 55%;
+    }
+    &__sideboard {
+        top: 20px;
+    }
+    &__subtitle {
+        font-size: rem(12px);
+    }
+    &__title {
+        font-size: rem(59px);
+    }
+    &__paragraph {
+        font-size: rem(12px);
+    }
+    &__price {
+        font-size: rem(23px);
+    }
+}

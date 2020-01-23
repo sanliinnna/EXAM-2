@@ -1,0 +1,70 @@
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor: default;
+}
+
+body {
+    font-family: $baseFontFamily;
+    @include display(flex);
+    @include flex-direction(column);
+    position: relative;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $baseBlack;
+}
+
+img {
+    border-style: none;
+    width: 100%;
+}
+
+button,
+input {
+    font-family: $baseFontFamily;
+}
+
+.hashtag {
+    &::before {
+        content: "#";
+    }
+}
+
+.visible {
+    display: block;
+}
+
+.hide {
+    display: none !important
+}
+
+.fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $baseWhite;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.heart {
+    fill: $baseBlack;
+}

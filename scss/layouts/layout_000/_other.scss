@@ -1,0 +1,66 @@
+.other-box {
+    @include display(flex);
+    @include flex-direction(column);
+    padding-left: 20px;
+    padding-right: 20px;
+    &__item {
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(flex-start);
+        @include justify-content(space-around);
+        height: 300px;
+        margin-bottom: 20px;
+        background: url(../img/headphone.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        padding-left: 20px;
+        padding-right: 20px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            background-size: cover;
+            transform-origin: center;
+            transition: transform .2s ease-in-out;
+        }
+        &:last-of-type {
+            background: url(../img/woopy.jpg);
+            margin-bottom: 0;
+            background-size: cover;
+            background-position: center;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: inherit;
+                background-size: cover;
+                transform-origin: center;
+                transition: transform .2s ease-in-out;
+            }
+        }
+    }
+    &__subtitle {
+        font-size: rem(12px);
+        color: #777;
+        text-transform: uppercase;
+        font-weight: $baseFontWeightLight;
+        position: relative;
+        z-index: 1;
+    }
+    &__title {
+        font-size: rem(26px);
+        font-weight: $baseFontWeightBold;
+        max-width: 60%;
+        position: relative;
+        z-index: 1;
+    }
+}

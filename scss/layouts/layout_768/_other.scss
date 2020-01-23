@@ -1,0 +1,9 @@
+.other-box {
+    flex-direction: row;
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(space-around);
+    &__item {
+        flex: 0 0 45%;
+    }
+}

@@ -1,0 +1,20 @@
+    .other-box {
+        &__item {
+            background-size: 100%;
+            &:hover {
+                &::after {
+                    transform: scale(1.05);
+                }
+                &>.other-box__title {
+                    transition: color .2s ease-in-out;
+                    color: #E67B3A;
+                }
+            }
+            &:last-of-type {
+                &:hover {
+                    transition: background-size .7s ease;
+                    background-size: 110%;
+                }
+            }
+        }
+    }

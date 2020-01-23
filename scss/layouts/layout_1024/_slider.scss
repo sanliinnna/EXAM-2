@@ -1,0 +1,118 @@
+.slider-box {
+    &__item {
+        min-height: 0;
+    }
+    &__lamp1 {
+        left: 35%;
+        max-height: 100%;
+        max-width: 14%;
+        top: -10px;
+    }
+    &__lamp2 {
+        left: 15%;
+        max-width: 20%;
+        top: -30px;
+    }
+    &__subtitle {
+        margin-top: 15%;
+        font-size: rem(15px);
+        &::before {}
+        margin-left: 66.5%;
+    }
+    &__title {
+        margin-top: 5%;
+        font-size: rem(68px);
+        margin-left: 65%;
+    }
+    &__paragraph {
+        margin-top: 16px;
+        margin-left: 65%;
+    }
+    &__price {}
+    &__button {
+        margin-top: 35px;
+        max-width: 25%;
+        font-size: rem(16px);
+        margin-left: 65%;
+        margin-bottom: 20%;
+        cursor: pointer;
+    }
+}
+
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+    position: absolute;
+    background: #fff;
+    border: none;
+    color: #000;
+}
+
+.flickity-button:focus {
+    outline: none;
+}
+
+.flickity-button:active {
+    opacity: 1;
+}
+
+.flickity-button:disabled {
+    opacity: 0.3;
+    cursor: auto;
+    /* prevent disabled button from capturing pointer up event. #716 */
+    pointer-events: none;
+}
+
+.flickity-button-icon {
+    fill: currentColor;
+}
+
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+    /* top: 50%; */
+    bottom: 0;
+    /* border-radius: 50%; */
+    /* vertically center */
+    display: block;
+    width: 90px;
+    height: 80px;
+    background: #fff;
+    transform: translateY(-15%);
+}
+
+.flickity-prev-next-button.previous {
+    right: 7.5%;
+}
+
+.flickity-prev-next-button.next {
+    right: 0;
+}
+
+
+/* right to left */
+
+.flickity-rtl .flickity-prev-next-button.previous {
+    left: auto;
+    right: 10px;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 40%;
+    height: 40%;
+    color: #000;
+}
+
+.flickity-page-dots {
+    display: none;
+}

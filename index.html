@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet" />
+
+    <title>AUROS.</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- logo -->
+        <div class="header__logo">
+            <a href="#">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+        </div>
+        <!-- menu-button -->
+        <a class="header__menu-button" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <!-- facilities -->
+        <div class="header__facilities">
+            <!-- search -->
+            <div class="header__facilities-item header__facilities-item_search">
+                <img src="img/magnifying-glass.svg" alt="">
+                <div>
+                    <input type="search" name="" id="" placeholder="Search on AUROS.">
+                    <button type="">
+                        <img src="img/magnifying-glass.svg" alt="">
+                    </button>
+                    <a class="header__facilities-button" id="menuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="light-overlay"></div>
+                </div>
+            </div>
+            <!-- account -->
+            <div class="header__facilities-item  header__facilities-item_account">
+
+                <img src="img/user.svg" alt="">
+                <div class="lil-circle wish-box"></div>
+            </div>
+            <!-- cart -->
+            <div class="header__facilities-item  header__facilities-item_cart">
+
+                <img src="img/commerce-and-shopping.svg" alt="">
+                <div class="lil-circle cart-box"></div>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <nav class="header__menu">
+            <ul>
+                <li class="has-submenu active-li">
+                    <a class="is-submenu" href="">Home</a>
+                    <ul>
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a class="is-submenu" href="">Shop</a>
+                    <ul>
+                        <li>
+                            <a href="#">Shop Full Width</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop Sidebar</a>
+                        </li>
+                        <li>
+                            <a href="#">Cart</a>
+                        </li>
+                        <li>
+                            <a href="#">Checkout</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Method</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a class="is-submenu" href="">Product</a>
+                    <ul>
+                        <li>
+                            <a href="#">Simple Product</a>
+                        </li>
+                        <li>
+                            <a href="#">Variable Product</a>
+                        </li>
+                        <li>
+                            <a href="#">Group Product</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliate Product</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a class="is-submenu" href="">Blog</a>
+                    <ul>
+                        <li>
+                            <a href="#">Blog List</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog Single</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog Modern</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a class="is-submenu" href="">Page</a>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">404 page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- mobile menu -->
+        <div class="dark-overlay"></div>
+
+
+    </header>
+    <main class="main">
+        <!-- slider -->
+        <div class="slider-box fade">
+            <div class="slider-box__item">
+                <div class="slider-box__arrows">
+                    <p class="slider-box__arrow-item "></p>
+                    <p class="slider-box__arrow-item "></p>
+                </div>
+
+                <img class="slider-box__lamp1" src="img/lamp1.png" alt="">
+                <img class="slider-box__lamp2" src="img/lamp2.png" alt="">
+                <div class="slider-box__subtitle ">
+                    <p>Lighting</p>
+                    <p>2020</p>
+                </div>
+                <h1 class="slider-box__title ">Nude</h1>
+                <p class="slider-box__paragraph ">From<span class="slider-box__price ">$137.46</span></p>
+                <button class="slider-box__button ">Shop Now</button>
+            </div>
+            <div class="slider-box__item">
+                <div class="arrows">
+                    <p class="left"></p>
+                    <p class="right"></p>
+                </div>
+
+                <div class="slider-box__img">
+                    <img class="slider-box__sideboard " src="img/sideboards.png " alt=" ">
+                </div>
+                <div class="slider-box__subtitle slider-box__subtitle_s2">
+                    <p>Sideboards</p>
+                    <p>2020</p>
+                </div>
+                <h1 class="slider-box__title slider-box__title_s2">Light</h1>
+                <p class="slider-box__paragraph slider-box__paragraph_s2">From<span class="slider-box__price ">$46.43</span></p>
+                <button class="slider-box__button slider-box__button_s2">Shop Now</button>
+            </div>
+        </div>
+        <!-- sections -->
+        <div class="section-box ">
+            <!-- item 1 -->
+            <div class="section-box__item ">
+                <div class="section-box__img ">
+                    <img src="img/chair.jpg " alt="chair ">
+                </div>
+                <h1 class="section-box__title ">Chairs</h1>
+                <p class="section-box__qty ">4 items</p>
+            </div>
+            <!-- item 2 -->
+            <div class="section-box__item ">
+                <div class="section-box__img ">
+                    <img src="img/decor.jpg " alt=" ">
+                </div>
+                <h1 class="section-box__title ">Decor</h1>
+                <p class="section-box__qty ">5 items</p>
+            </div>
+            <!-- item 3 -->
+            <div class="section-box__item ">
+                <div class="section-box__img ">
+                    <img src="img/furniture.jpg " alt=" ">
+                </div>
+                <h1 class="section-box__title ">Furnitures</h1>
+                <p class="section-box__qty ">6 items</p>
+            </div>
+            <!-- item 4 -->
+            <div class="section-box__item ">
+                <div class="section-box__img ">
+                    <img src="img/lighting.jpg " alt=" ">
+                </div>
+                <h1 class="section-box__title ">Lighting</h1>
+                <p class="section-box__qty ">4 items</p>
+            </div>
+        </div>
+        <!-- trending-box -->
+        <div class="trending-box">
+            <h1 class="title">Trending This Week</h1>
+            <h2 class="subtitle ">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</h2>
+            <div class="product-box ">
+                <!-- item 1 -->
+                <div class="product-item">
+                    <div class="product-item__img ">
+                        <img src="img/linas.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Linas Crew</h1>
+                    </a>
+                    <p class="product-item__price ">$183.76</p>
+                </div>
+                <!-- item 2 -->
+                <div class="product-item">
+                    <div class="product-item__img ">
+                        <img src="img/unachair.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">UNA Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$102.84</p>
+                </div>
+                <!-- item 3 -->
+                <div class="product-item">
+                    <div class="product-item__img ">
+                        <img src="img/teapot.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Teapot</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 4 -->
+                <div class="product-item">
+                    <div class="product-item__img ">
+                        <img src="img/studiochair.jpg " alt=" ">
+                    </div>
+                    <!-- <button class="product-item__button ">+ Add to cart</button> -->
+                    <div class="out-of-stock">Out of stock</div>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <p class="product-item__price "> </p>
+                </div>
+                <!-- item 5 -->
+                <div class="product-item">
+                    <div class="product-item__img ">
+                        <img src="img/linas.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Linas Crew</h1>
+                    </a>
+                    <p class="product-item__price ">$183.76</p>
+                </div>
+            </div>
+            <button class="more">+ See more products</button>
+        </div>
+        <!-- new-box -->
+        <div class="new-box">
+            <h2 class="new-box__subtitle hashtag ">Furnitures</h2>
+            <h1 class="new-box__title ">New Design 2020</h1>
+            <button class="new-box__button">Shop Now</button>
+        </div>
+        <!-- newest-box -->
+        <div class="newest-box">
+            <h1 class="title ">Newest Design</h1>
+            <h2 class="subtitle ">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</h2>
+            <nav class="newest-box__filter-nav">
+                <p class="newest-box__filter-item nav-active all-filter ">All</p>
+                <p class="newest-box__filter-item furnitures-filter ">Furnitures</p>
+                <p class="newest-box__filter-item chairs-filter ">Chairs</p>
+                <p class="newest-box__filter-item lighting-filter ">Lighting</p>
+                <p class="newest-box__filter-item decor-filter ">Decor</p>
+            </nav>
+            <!-- <select class="newest-box__sort-nav hpad " name="price-sorting ">
+                <option selected disabled>Default</option>
+                <option value="l2h ">Low to high</option>
+                <option value="h2l ">High to low</option>
+            </select> -->
+            <!-- <nav class="newest-box__sort-nav hpad ">
+                <p class="newest-box__sort-item nav-active price-up ">Low to high</p>
+                <p class="newest-box__sort-item price-down ">High to low</p>
+            </nav> -->
+            <div class="product-box">
+                <!-- item 1 -->
+                <div class="product-item all furnitures decor" data-price="183.76 ">
+                    <div class="product-item__img ">
+                        <img src="img/linas2.jpg " alt=" ">
+                        <img class="img-2" src="img/linas.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Linas Crew</h1>
+                    </a>
+                    <p class="product-item__price ">$183.76</p>
+                </div>
+                <!-- item 2 -->
+                <div class="product-item all furnitures chairs" data-price="102.84 ">
+                    <div class="product-item__img ">
+                        <img src="img/unachair2.jpg " alt=" ">
+                        <img class="img-2" src="img/unachair.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">UNA Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$102.84</p>
+                </div>
+                <!-- item 3 -->
+                <div class="product-item all decor" data-price="120.05 ">
+                    <div class="product-item__img ">
+                        <img src="img/teapot2.jpg " alt=" ">
+                        <img class="img-2" src="img/teapot.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Teapot</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 4 -->
+                <div class="product-item all furnitures chairs">
+                    <div class="product-item__img ">
+                        <img src="img/studiochair.jpg " alt=" ">
+                        <img class="img-2" src="img/unachair.jpg " alt=" ">
+                    </div>
+                    <!-- <button class="product-item__button ">+ Add to cart</button> -->
+                    <div class="out-of-stock">Out of stock</div>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <!-- <p class="product-item__price "> </p> -->
+                </div>
+
+                <!-- item 5 -->
+                <div class="product-item all lighting" data-price="183.76 ">
+                    <div class="product-item__img ">
+                        <img src="img/lamp1.jpg " alt=" ">
+                        <img class="img-2" src="img/lamp4.jpg " alt=" ">
+                    </div>
+                    <!-- <button class="product-item__button ">+ Add to cart</button> -->
+                    <div class="out-of-stock">Out of stock</div>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Linas Crew</h1>
+                    </a>
+                    <!-- <p class="product-item__price ">$183.76</p> -->
+                </div>
+                <!-- item 6 -->
+                <div class="product-item all lighting" data-price="102.84 ">
+                    <div class="product-item__img ">
+                        <img src="img/lamp2.jpg " alt=" ">
+                        <img class="img-2" src="img/lamp1.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">UNA Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$102.84</p>
+                </div>
+                <!-- item 7 -->
+                <div class="product-item all chairs furnitures" data-price="120.05 ">
+                    <div class="product-item__img ">
+                        <img src="img/chair3.jpg " alt=" ">
+                        <img class="img-2" src="img/studiochair.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Teapot</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 8 -->
+                <div class="product-item all furnitures">
+                    <div class="product-item__img ">
+                        <img src="img/sofa1.jpg " alt=" ">
+                        <img class="img-2" src="img/unachair.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 9 -->
+                <div class="product-item all chairsfurnitures">
+                    <div class="product-item__img ">
+                        <img src="img/chair4.jpg " alt=" ">
+                        <img class="img-2" src="img/studiochair.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 10 -->
+                <div class="product-item all lighting decor">
+                    <div class="product-item__img ">
+                        <img src="img/lamp3.jpg " alt=" ">
+                        <img class="img-2" src="img/lamp4.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 11 -->
+                <div class="product-item all furniture">
+                    <div class="product-item__img ">
+                        <img src="img/table1.jpg " alt=" ">
+                        <img class="img-2" src="img/teapot2.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+                <!-- item 12 -->
+                <div class="product-item all furnitures decor">
+                    <div class="product-item__img ">
+                        <img src="img/furn2.jpg " alt=" ">
+                        <img class="img-2" src="img/furn1.jpg " alt=" ">
+                    </div>
+                    <button class="product-item__button ">+ Add to cart</button>
+                    <button class="product-item__wishlist "></button>
+                    <a href="# ">
+                        <h1 class="product-item__title ">Studio Chair</h1>
+                    </a>
+                    <p class="product-item__price ">$120.05</p>
+                </div>
+            </div>
+            <!-- <button class="main__more ">+ See more products</button> -->
+        </div>
+
+        <!-- other-box -->
+        <div class="other-box">
+            <!-- item -->
+            <div class="other-box__item">
+                <h2 class="other-box__subtitle hashtag ">Other</h2>
+                <div class="other-box__title ">Overear Headphone</div>
+                <a href="# " class="more ">Shop Now</a>
+            </div>
+            <!-- item -->
+            <div class="other-box__item">
+                <h2 class="other-box__subtitle hashtag ">Other</h2>
+                <div class="other-box__title ">Woody for Paper Clips</div>
+                <a href="# " class="more ">Shop Now</a>
+            </div>
+        </div>
+        <!-- instagram-box -->
+        <div class="instagram-box ">
+            <div class="instagram-box__wrap">
+                <div class="instagram-box__icon">
+                    <img src="img/instagram.svg" alt=" ">
+                </div>
+                <div class="instagram-box__link">@sanliin.nn</div>
+            </div>
+            <div class="instagram-box__slider">
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta1.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta2.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta3.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta4.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta5.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta1.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta2.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta3.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta4.jpg" alt=" "></a>
+                </div>
+                <div class="instagram-box__img ">
+                    <a data-fancybox="gallery"><img src="img/insta5.jpg" alt=" "></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <!-- wrap -->
+        <div class="footer__wrap">
+            <div class="footer__logo ">
+                <img src="img/logo-white.svg " alt="logo ">
+            </div>
+            <p>2593 Timbercrest Road, Chisana, Alaska Badalas United State</p>
+            <p>(+91)7-723-4608</p>
+            <a href="# ">Aurosfurniture@domain.vn</a>
+        </div>
+        <!-- wrap -->
+        <div class="footer__wrap">
+            <div class="footer__title ">Our Products</div>
+            <a href="# ">Checkout</a>
+        </div>
+        <!-- wrap -->
+        <div class="footer__wrap">
+            <div class="footer__title ">Useful Links</div>
+            <a href="# ">About Us</a>
+            <a href="# ">Blog</a>
+            <a href="# ">Contact Us</a>
+        </div>
+        <!-- wrap -->
+        <div class="footer__wrap">
+            <div class="footer__title">Newsletter</div>
+            <p>Stay Updated on all that’s new add noteworthy</p>
+            <form action=" " class="footer__form">
+                <input type="text " name="contact[email] " required="required " placeholder="Enter your e-mail... ">
+                <button type="submit " class="footer__form-button ">Subscribe</button>
+            </form>
+            <div class="footer__social-box">
+                <a href="# "><img src="img/instagram.svg " alt=" " class="footer__social-icon "></a>
+                <a href="# "><img src="img/twitter.svg " alt=" " class="footer__social-icon "></a>
+                <a href="# "><img src="img/facebook.svg " alt=" " class="footer__social-icon "></a>
+                <a href="# "><img src="img/wordpress.svg " alt=" " class="footer__social-icon "></a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright © 2020 <span class="b ">Auros.</span> All rights reserved.</p>
+        <div class="copyright__payment-box">
+            <img src="img/paypal.svg " alt=" " class="copyright__payment-icon ">
+            <img src="img/visa.svg " alt=" " class="copyright__payment-icon ">
+            <img src="img/mastercard.svg " alt=" " class="copyright__payment-icon ">
+            <img src="img/amex.svg " alt=" " class="copyright__payment-icon ">
+            <img src="img/discover.svg " alt=" " class="copyright__payment-icon ">
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="js/ssm.min.js "></script>
+
+    <script src="slick/slick.min.js"></script>
+
+    <script src="js/filter&sort.js "></script>
+    <script src="js/load-more-btn.js "></script>
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/search.js "></script>
+
+    <script src="js/slider.js "></script>
+    <script src="js/init.js "></script>
+
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/instagram.js"></script>
+
+</body>
+
+</html>

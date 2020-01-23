@@ -1,0 +1,11 @@
+.copyright {
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    &__payment-box {
+        @include justify-content(space-between);
+        min-width: 0;
+    }
+    &__payment-icon {
+        padding: 0 5px;
+    }
+}

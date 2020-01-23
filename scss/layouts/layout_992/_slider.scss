@@ -1,0 +1,91 @@
+.slider-box {
+    &__item {
+        // height: 700px;
+        padding: 0 70px;
+    }
+    &__lamp1 {
+        left: 70%;
+        max-height: 76%;
+        top: -20px;
+    }
+    &__lamp2 {
+        left: 40%;
+        max-width: 28%;
+        top: -60px;
+    }
+    &__sideboard {
+        margin-left: 0;
+        max-width: 50%;
+    }
+    &__subtitle {
+        margin-top: 15%;
+        font-size: rem(15px);
+        animation: title-apearing .3s ease-in .3s backwards;
+        &_s2 {
+            margin-left: 70%;
+        }
+        &::before {}
+    }
+    &__title {
+        margin-top: 8%;
+        font-size: rem(68px);
+        animation: title-apearing .3s ease-in .3s backwards;
+        &_s2 {
+            margin-left: 70%;
+        }
+    }
+    &__paragraph {
+        margin-top: 15px;
+        animation: title-apearing .3s ease-in .3s backwards;
+        &_s2 {
+            margin-left: 70%;
+        }
+    }
+    &__price {
+        animation: title-apearing .3s ease-in .3s backwards;
+    }
+    &__button {
+        animation: title-apearing .3s ease-in .3s backwards;
+        font-size: rem(16px);
+        margin-bottom: 15%;
+        transition: background-color .3s ease;
+        &_s2 {
+            margin-left: 70%;
+        }
+        &:hover {
+            background-color: sandybrown;
+        }
+    }
+    &__arrows {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        min-width: 181px;
+    }
+    &__arrow-item {
+        background: url(../img/next.svg) no-repeat;
+        background-position: center;
+        display: block;
+        bottom: 0;
+        top: 10px;
+        left: 20px;
+        width: 90px;
+        right: 100px;
+        background-color: $baseWhite;
+        height: 80px;
+        border-radius: 1px;
+        background-size: 30%;
+        opacity: 0.5;
+        &:first-of-type {
+            transform: rotate(180deg);
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.9;
+        }
+    }
+}

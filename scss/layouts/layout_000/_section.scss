@@ -1,0 +1,31 @@
+.section-box {
+    @include display(flex);
+    @include flex-direction(column);
+    padding: 20px;
+    margin-bottom: 50px;
+    &__item {
+        margin-bottom: 20px;
+        position: relative;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(center);
+        overflow: hidden;
+    }
+    &__title {
+        font-size: rem(28px);
+        font-weight: $baseFontWeightBold;
+        margin: -6rem 0 0 2rem;
+        position: absolute;
+    }
+    &__qty {
+        font-size: rem(14px);
+        color: #666;
+        margin: -3.5rem 0 0 2rem;
+        position: absolute;
+    }
+}

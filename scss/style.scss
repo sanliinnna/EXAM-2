@@ -1,0 +1,23 @@
+// -----IMPORT-----
+@import "base/index";
+@import "layouts/layout_000/index";
+// -----MEDIA QUARIES-----
+@include mq(576px) {
+    @import "layouts/layout_576/index";
+}
+
+@include mq(768px) {
+    @import "layouts/layout_768/index";
+}
+
+@include mq(992px) {
+    @import "layouts/layout_992/index";
+}
+
+@include mq(1024px) {
+    @import "layouts/layout_1024/index";
+}
+
+@include mq(576px) {
+    @import "layouts/layout_576/index";
+}

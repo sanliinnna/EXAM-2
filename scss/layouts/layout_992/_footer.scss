@@ -1,0 +1,19 @@
+.footer {
+    a {
+        &:hover {
+            color: $baseColor;
+        }
+    }
+    &__form-button {
+        cursor: pointer;
+        &:hover {
+            color: $baseColor;
+        }
+    }
+    &__social-icon {
+        &:hover {
+            animation-name: light-rotating;
+            animation-duration: .4s;
+        }
+    }
+}

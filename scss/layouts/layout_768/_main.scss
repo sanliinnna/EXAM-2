@@ -1,0 +1,11 @@
+.main {
+    margin-top: 122px;
+}
+
+.product-item {
+    max-width: 340px;
+    margin-bottom: 0;
+    &:last-of-type {
+        margin-top: 0;
+    }
+}

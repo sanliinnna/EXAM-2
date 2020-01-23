@@ -1,0 +1,24 @@
+.footer {
+    &__wrap {
+        &:nth-of-type(1) {
+            flex: 33%;
+        }
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+            flex: 16%;
+        }
+        &:nth-of-type(4) {
+            flex: 33%;
+            @include align-items(center);
+        }
+    }
+    &__form {
+        @include flex-direction(row);
+        input {
+            min-width: 50%;
+        }
+    }
+    &__form-button {
+        min-width: 50%;
+    }
+}

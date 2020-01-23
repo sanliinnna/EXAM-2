@@ -1,0 +1,166 @@
+.header {
+    @include flex-wrap(wrap);
+    padding-left: 40px;
+    padding-right: 40px;
+    &__logo {
+        @include display(flex);
+        @include justify-content(center);
+        min-width: 100%;
+        margin-bottom: 20px;
+        img {
+            max-width: 130px;
+        }
+    }
+    &__facilities {
+        @include display(flex);
+        @include justify-content(flex-end);
+        @include align-items(center);
+        @include order(2);
+        flex: 1;
+    }
+    &__facilities-item {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        &:last-of-type {
+            margin-right: 10px;
+        }
+        &_search {
+            div {
+                display: none;
+                &.visible {
+                    animation: opacity .4s;
+                    @include display(flex);
+                    @include justify-content(center);
+                    @include align-items(center);
+                    position: absolute;
+                    height: 100vh;
+                    width: 100%;
+                    z-index: 99999;
+                    left: 0;
+                    top: 0 // bottom: 0;
+                    // top: 50%;
+                    // left: 50%;
+                }
+                button {
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                    width: 30px;
+                    height: 30px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 2px solid $baseBlack;
+                    background: transparent;
+                    z-index: 100000;
+                    padding-right: 2%;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                input {
+                    position: relative;
+                    text-align: center;
+                    font-size: rem(30px);
+                    height: 30px;
+                    flex-basis: 78%;
+                    margin-right: 0;
+                    outline: none;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 2px solid $baseBlack;
+                    background: transparent;
+                    z-index: 100000;
+                    padding-bottom: 5px;
+                    color: $baseColor;
+                }
+            }
+        }
+        &_account {}
+        &_cart {}
+    }
+    &__facilities-button {
+        display: none;
+        &.visible {
+            animation: top-button .3s, opacity 1s;
+            display: block;
+            width: 27px;
+            height: 27px;
+            position: absolute;
+            top: 70px;
+            right: 10%;
+            cursor: pointer;
+            z-index: 100000;
+            span {
+                height: 1px;
+                width: 100%;
+                background-color: $baseWhite;
+                position: absolute;
+                top: 0;
+            }
+            span:first-child {
+                top: 0;
+                left: 0;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $baseBlack;
+            }
+            span:nth-child(2) {
+                top: 15px;
+                left: 2px;
+                transform: rotate(-315deg);
+                width: 25px;
+            }
+            span:nth-child(3) {
+                top: 15px;
+                transform: rotate(495deg);
+                width: 25px;
+                left: 2px;
+            }
+        }
+    }
+}
+
+.light-overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    // display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100000;
+    transition: opacity .4s, visibility .3s;
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.lil-circle {
+    color: $baseWhite;
+    background: $baseColor;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wish-box {
+    display: none;
+    &.visible {
+        display: block;
+    }
+}
+
+.cart-box {
+    display: none;
+    &.visible {
+        display: block;
+    }
+}

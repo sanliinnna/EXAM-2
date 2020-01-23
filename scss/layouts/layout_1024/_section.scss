@@ -1,0 +1,5 @@
+.section-box {
+    &__item {
+        @include flex-basis(22%);
+    }
+}
