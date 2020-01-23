@@ -1,8 +1,7 @@
 $("[data-fancybox]").fancybox({
-    prevEffect: 'none',
-    nextEffect: 'none',
 
-    // protect: true
+
+    protect: true
 });
 
 $(".instagram-box__slider").slick({

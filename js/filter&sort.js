@@ -44,15 +44,8 @@ function activeNav(leverItem, lever) {
 
 // function sortProductsPriceUp() {
 
-//     let product = $('.product-item');
-//     product.sort(function(a, b) { return $(a).data("price") - $(b).data("price") });
-//     $(".products-box").html(product);
-
 // }
 
 // function sortProductsPriceDown() {
-//     product = $('.product-item');
-//     product.sort(function(a, b) { return $(b).data("price") - $(a).data("price") });
-//     $(".products-box").html(product);
 
 // }

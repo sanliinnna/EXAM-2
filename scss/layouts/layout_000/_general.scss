@@ -43,6 +43,12 @@ input {
     }
 }
 
+.dollar {
+    &::before {
+        content: "$";
+    }
+}
+
 .visible {
     display: block;
 }

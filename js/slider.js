@@ -8,9 +8,6 @@ $(document).ready(function() {
         dots: false,
         arrows: true,
         draggable: true,
-        // pauseOnHover: true,
-        // mobileFirst: true,
-        // swipe: true,
         responsive: [{
             breakpoint: 768,
             settings: {

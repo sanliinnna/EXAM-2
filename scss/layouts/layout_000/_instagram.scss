@@ -3,15 +3,17 @@
     margin-top: 30px;
     &__wrap {
         position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(center);
         background-color: $baseBlack;
         color: $baseWhite;
-        z-index: 88888;
+        z-index: 99;
+        // padding: 0 4%;
         top: 75px;
         left: 50%;
         width: 15%;
+        font-size: rem(10px);
         margin-left: -7.4%;
         height: 50px;
         border: 1px solid $baseWhite;
